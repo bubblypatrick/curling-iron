@@ -6,8 +6,17 @@ dependency is on a DNS resolver to transition the host to an IPv4 or IPv6 addres
 and anyhow for easy error bubbling.
 
 # Usage
+
+## You have rust installed already
 ```
 cargo run
 
+www.google.com
+```
+
+## Run it in a container
+```
+docker build -t curling-iron .
+docker run -it curling-iron
 www.google.com
 ```
