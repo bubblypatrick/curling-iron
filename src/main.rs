@@ -5,6 +5,8 @@ use trust_dns_resolver::Resolver;
 use trust_dns_resolver::config::*;
 
 fn main() -> anyhow::Result<()> {
+    println!("Enter a domain to GET");
+
     let mut input_buffer: String = String::new();
     let _ = std::io::stdin().read_line(&mut input_buffer);
 
